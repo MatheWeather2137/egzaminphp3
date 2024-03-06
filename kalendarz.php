@@ -58,10 +58,11 @@
                     echo "</div>";
                 }
             }
+            mysqli_close($conn);
         ?>
     </div>
     <div id="stopka">
-        <form action="kalendarz.php" method="POST">
+        <form action="form.php" method="POST">
             <label for="input">dodaj wpis:</label>    
             <input type="text" id="input">
             <input type="submit" value="DODAJ">
